@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Club | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(to bottom right, #f3cc30, #b8860b);
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 60px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .navbar h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    .hero {
+      margin-top: 20px;
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #000;
+      color: #ffd700;
+      padding: 12px 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #222;
+    }
+
+    .tiles {
+      display: flex;
+      gap: 20px;
+      margin-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    .tile {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      width: 220px;
+      backdrop-filter: blur(5px);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+    }
+
+    .tile h3 {
+      margin-top: 15px;
+      font-size: 1.3rem;
+    }
+
+    .tile img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .team {
+      margin-top: 60px;
+    }
+
+    .team h2 {
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .member {
+      background: #fff8dc;
+      color: #000;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+      width: 150px;
+    }
+
+    .member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .footer {
+      margin-top: 60px;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      .tiles, .team-grid {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <div class="navbar">
+      <h2>PCCoE Maths Club</h2>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#events">Events</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Unleash the Mathlete Within</h1>
+      <p>We believe in logic, curiosity, and competitive spirit. Puzzles, challenges, and breakthroughs — all in one club. "Mathematics is not about numbers, equations, or algorithms: it's about understanding."</p>
+      <button class="btn">Explore</button>
+    </div>
+
+    <!-- Events -->
+    <div class="tiles" id="events">
+      <div class="tile">
+        <img src="https://img.freepik.com/free-vector/math-competition-concept_52683-39368.jpg" alt="Puzzle Night">
+        <h3>Puzzle Night</h3>
+      </div>
+      <div class="tile">
+        <img src="https://img.freepik.com/free-vector/online-education-concept_23-2148533387.jpg" alt="Math Quest">
+        <h3>Math Quest 2025</h3>
+      </div>
+      <div class="tile">
+        <img src="https://img.freepik.com/free-vector/quiz-concept-illustration_114360-2143.jpg" alt="Math Bee">
+        <h3>Rapid Math Bee</h3>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team" id="team">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Coordinator">
+          <h4>Coordinator</h4>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Member 1">
+          <h4>Member 1</h4>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Member 2">
+          <h4>Member 2</h4>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Member 3">
+          <h4>Member 3</h4>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Member 4">
+          <h4>Member 4</h4>
+        </div>
+        <div class="member">
+          <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Member 5">
+          <h4>Member 5</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer / Contact -->
+    <div class="footer" id="contact">
+      Contact us: mathclub@college.edu | +91 9876543210
+    </div>
+  </div>
+</body>
+</html>

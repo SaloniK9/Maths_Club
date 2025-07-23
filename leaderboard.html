@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Leaderboard with Images</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f7d488, #b58e36);
+      color: #fff;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.25);
+      color: #ffd700;
+      letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .rank {
+      font-weight: bold;
+      color: #fffbea;
+    }
+
+    .profile-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏆 Maths Club Leaderboard</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Matches</th>
+          <th>Kill Points</th>
+          <th>Player Points</th>
+          <th>Total Points</th>
+          <th>Wins</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">01</td>
+          <td><img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Profile" class="profile-img"></td>
+          <td>Rohan Deshmukh</td>
+          <td>05</td>
+          <td>20</td>
+          <td>17</td>
+          <td>37</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <td class="rank">02</td>
+          <td><img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Profile" class="profile-img"></td>
+          <td>Ananya Sharma</td>
+          <td>05</td>
+          <td>18</td>
+          <td>15</td>
+          <td>33</td>
+          <td>02</td>
+        </tr>
+        <tr>
+          <td class="rank">03</td>
+          <td><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Profile" class="profile-img"></td>
+          <td>Aarav Patil</td>
+          <td>05</td>
+          <td>16</td>
+          <td>14</td>
+          <td>30</td>
+          <td>02</td>
+        </tr>
+        <!-- Add more players as needed -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
